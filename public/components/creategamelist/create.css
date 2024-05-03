@@ -1,0 +1,32 @@
+.uldiv {
+  width: 100svw;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.ulcontainer {
+  display: flex;
+  width: 100svw;
+  position: relative;
+  height: 300px;
+  top: 250px;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li {
+  background-color: brown;
+  border: 3px solid black;
+  height: 50px;
+  width: 250px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  list-style: none;
+  font-size: 30px;
+  font-weight: bolder;
+}
+a {
+  list-style: none;
+  font-size: 35px;
+}
