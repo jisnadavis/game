@@ -1,0 +1,47 @@
+.memory-grid {
+  display: flex;
+  width: 90svw;
+  flex-wrap: wrap;
+  top: 20%;
+  gap: 20px;
+  padding: 20px;
+  position: absolute;
+  justify-content: center;
+}
+
+.memory-card {
+  width: 200px;
+  height: 150px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.memory-card > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #ccc;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flipped .back {
+  transform: rotateY(0deg);
+}
+.score {
+  background-color: blanchedalmond;
+  color: salmon;
+  width: 200px;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+}

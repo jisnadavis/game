@@ -1,25 +1,36 @@
 import { gamelist } from '../data/gamelist'
+import { memory } from '../gamepages/memorygame/memory'
 import './create.css'
 export const creategamelist = () => {
   const divapp = document.querySelector('#app')
   divapp.innerHTML = ''
   const uldiv = document.createElement('div')
   uldiv.className = 'uldiv'
-  const ulcontainer = document.createElement('ul')
+  const ulcontainer = document.createElement('nav')
   ulcontainer.className = 'ulcontainer'
-  for (const game of gamelist) {
-    const gameli = document.createElement('li')
+  for (let i = 0; i < gamelist.length; i++) {
+    const game = gamelist[i]
+    const gameli = document.createElement('a')
     gameli.textContent = game.gamename
-
-    const gameanchor = document.createElement('a')
-    gameanchor.href = game.gamepage
-    gameanchor.target = '_blank'
-    gameli.addEventListener('click', () => {
+    gameli.href = game.gamepage
+    gameli.classList.add('gameli')
+    if (i === 0) {
+      gameli.classList.add('active')
+    }
+    gameli.addEventListener('click', (event) => {
+      event.preventDefault()
+      document.querySelectorAll('.gameli').forEach((a) => {
+        a.classList.remove('active')
+      })
+      gameli.classList.add('active')
       game.page()
+      return false
     })
+
     ulcontainer.appendChild(gameli)
-    gameli.appendChild(gameanchor)
   }
+
   uldiv.appendChild(ulcontainer)
-  divapp.appendChild(uldiv)
+  document.body.appendChild(uldiv)
+  memory()
 }

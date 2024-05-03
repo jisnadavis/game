@@ -1,0 +1,35 @@
+.memorydiv {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  flex-direction: column;
+  left: 35%;
+  gap: 20px;
+  align-items: center;
+}
+.gamepic {
+  width: 250px;
+  background-color: aliceblue;
+}
+.playbutton {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  animation: fontchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes fontchange {
+  0% {
+    font-size: 5px;
+    color: brown;
+  }
+  25% {
+    background-color: blueviolet;
+  }
+}

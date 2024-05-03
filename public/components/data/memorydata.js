@@ -1,0 +1,22 @@
+export const memoryData = [
+  { id: 1, imageUrl: './assets/banana.png' },
+  { id: 2, imageUrl: './assets/images.png' },
+  { id: 3, imageUrl: './assets/chicken.jpg' },
+  { id: 4, imageUrl: './assets/chef.jpg' },
+  { id: 5, imageUrl: './assets/burger.png' },
+  { id: 6, imageUrl: './assets/puppy.webp' },
+  { id: 7, imageUrl: './assets/icecream.jpg' },
+  { id: 8, imageUrl: './assets/pimiento.png' },
+  { id: 9, imageUrl: './assets/tomato.png' },
+  { id: 10, imageUrl: './assets/umbe.jpg' },
+  { id: 10, imageUrl: './assets/umbe.jpg' },
+  { id: 9, imageUrl: './assets/tomato.png' },
+  { id: 8, imageUrl: './assets/pimiento.png' },
+  { id: 7, imageUrl: './assets/icecream.jpg' },
+  { id: 6, imageUrl: './assets/puppy.webp' },
+  { id: 5, imageUrl: './assets/burger.png' },
+  { id: 4, imageUrl: './assets/chef.jpg' },
+  { id: 3, imageUrl: './assets/chicken.jpg' },
+  { id: 2, imageUrl: './assets/images.png' },
+  { id: 1, imageUrl: './assets/banana.png' }
+]

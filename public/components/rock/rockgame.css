@@ -1,0 +1,57 @@
+.rockscetion {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Change to a percentage value */
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.scorediv {
+  display: flex;
+  gap: 20px;
+  width: 90%; /* Change to a percentage value */
+  max-width: 800px; /* Add a max-width to prevent stretching on larger screens */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.scorediv h1 {
+  border: 2px solid saddlebrown;
+  background-color: beige;
+}
+
+.playsection {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+  width: 90%; /* Change to a percentage value */
+  max-width: 800px; /* Add a max-width to prevent stretching on larger screens */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.playimg {
+  width: 45%; /* Change to a percentage value */
+  max-width: 200px; /* Add a max-width to prevent stretching on larger screens */
+  height: auto; /* Allow height to adjust proportionally */
+  border: 2px solid salmon;
+}
+
+.playicon {
+  width: 30%; /* Change to a percentage value */
+  max-width: 75px; /* Add a max-width to prevent stretching on larger screens */
+  height: auto; /* Allow height to adjust proportionally */
+}
+
+.playdiv,
+.comdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: bisque;
+  height: 400px;
+  gap: 20px;
+}
