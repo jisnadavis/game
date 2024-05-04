@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  background-image: url('./assets/gma.jpg');
+  background-image: url('./public/assets/gma.jpg');
 }
 .play {
   width: 300px;
