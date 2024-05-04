@@ -1,5 +1,5 @@
 .memorydiv {
-  position: absolute;
+  position: relative;
   top: 40%;
   display: flex;
   justify-content: center;
@@ -31,5 +31,11 @@
   }
   25% {
     background-color: blueviolet;
+  }
+}
+@media (max-width: 582px) {
+  .memorydiv {
+    position: relative;
+    left: 0%;
   }
 }

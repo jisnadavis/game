@@ -1,5 +1,5 @@
 import { createbutton } from '../../createbutton/createbutton'
-i
+import { threeline } from '../../tictac/tictac'
 
 import './tresrays.css'
 export const tres = () => {
@@ -12,7 +12,9 @@ export const tres = () => {
   myimg.className = 'gamepic'
   const play = 'play'
   const playbutton = createbutton(play)
-  playbutton.addEventListener('click', () => {})
+  playbutton.addEventListener('click', () => {
+    threeline()
+  })
   playbutton.className = 'playbutton'
   memorydiv.appendChild(myimg)
   memorydiv.appendChild(playbutton)

@@ -33,3 +33,10 @@
     background-color: blueviolet;
   }
 }
+@media (max-width: 582px) {
+  .memorydiv {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+  }
+}

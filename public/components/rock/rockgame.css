@@ -3,7 +3,7 @@
   top: 20%;
   display: flex;
   flex-direction: column;
-  width: 100%; /* Change to a percentage value */
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -11,8 +11,8 @@
 .scorediv {
   display: flex;
   gap: 20px;
-  width: 90%; /* Change to a percentage value */
-  max-width: 800px; /* Add a max-width to prevent stretching on larger screens */
+  width: 90%;
+  max-width: 800px;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -33,23 +33,23 @@
   display: flex;
   padding: 20px;
   justify-content: space-evenly;
-  width: 90%; /* Change to a percentage value */
-  max-width: 800px; /* Add a max-width to prevent stretching on larger screens */
+  width: 90%;
+  max-width: 800px;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .playimg {
-  width: 45%; /* Change to a percentage value */
-  max-width: 200px; /* Add a max-width to prevent stretching on larger screens */
-  height: auto; /* Allow height to adjust proportionally */
+  width: 45%;
+  max-width: 200px;
+  height: auto;
   border: 2px solid salmon;
 }
 
 .playicon {
-  width: 30%; /* Change to a percentage value */
-  max-width: 75px; /* Add a max-width to prevent stretching on larger screens */
-  height: auto; /* Allow height to adjust proportionally */
+  width: 30%;
+  max-width: 75px;
+  height: auto;
 }
 
 .playdiv,
@@ -61,4 +61,14 @@
   background-color: bisque;
   height: 400px;
   gap: 20px;
+}
+@media (max-width: 920px) {
+  .rocksection {
+    top: 40%;
+  }
+}
+@media (max-width: 430px) {
+  .rocksection {
+    top: 50%;
+  }
 }

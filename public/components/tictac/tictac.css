@@ -1,0 +1,63 @@
+.gameBoard {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.button {
+  width: 120px;
+  background-color: blue;
+  cursor: pointer;
+  height: 50px;
+  position: relative;
+  left: 30px;
+  border: none;
+  border-radius: 30px;
+  animation-name: resize;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.cell {
+  width: 80px;
+  height: 40px;
+  background-color: beige;
+  border: 10px double salmon;
+  text-align: center;
+  font-weight: bolder;
+}
+.reset {
+  position: relative;
+  top: 20px;
+  left: 90px;
+  width: 100px;
+  height: 40px;
+  background-color: salmon;
+  border: none;
+  border-radius: 30px;
+}
+@keyframes resize {
+  0% {
+    width: 20px;
+  }
+  50% {
+    width: 60px;
+  }
+  100% {
+    width: 120px;
+  }
+}
+@media (max-width: 659px) {
+  .gameBoard {
+    top: 50%;
+    left: 10%;
+  }
+}
+@media (max-width: 418px) {
+  .gameBoard {
+    top: 50%;
+    left: 0%;
+  }
+}
