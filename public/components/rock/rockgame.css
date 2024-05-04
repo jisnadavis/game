@@ -1,4 +1,4 @@
-.rockscetion {
+.rocksection {
   position: absolute;
   top: 20%;
   display: flex;
@@ -20,6 +20,13 @@
 .scorediv h1 {
   border: 2px solid saddlebrown;
   background-color: beige;
+  width: 200px;
+  height: 50px;
+  font-weight: bolder;
+
+  text-align: center;
+  position: relative;
+  vertical-align: middle;
 }
 
 .playsection {
