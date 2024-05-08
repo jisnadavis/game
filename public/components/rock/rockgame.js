@@ -26,6 +26,7 @@ export const rockgame = () => {
   const playdiv = document.createElement('div')
   playdiv.className = 'playdiv'
   const playimg = document.createElement('img')
+
   playimg.src = stonedata[0].imageurl
   playimg.className = 'playimg'
   playdiv.appendChild(playimg)

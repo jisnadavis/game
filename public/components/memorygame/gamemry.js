@@ -72,9 +72,8 @@ export const gamemry = () => {
       if (score === 10) {
         setTimeout(() => {
           alert('you win the game')
+          resetGame()
         }, 1000)
-
-        resetGame()
       }
     } else {
       setTimeout(() => {

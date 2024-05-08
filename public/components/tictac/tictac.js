@@ -49,11 +49,15 @@ export const threeline = () => {
       event.target.textContent = currentPlayer
       cells[index] = currentPlayer
       if (checkWin(currentPlayer)) {
-        alert(`${currentPlayer} wins!`)
-        resetGame()
+        setTimeout(() => {
+          alert(`${currentPlayer} wins!`)
+          resetGame()
+        }, 1000)
       } else if (cells.every((cell) => cell !== '')) {
-        alert("It's a draw!")
-        resetGame()
+        setTimeout(() => {
+          alert(`it is a draw`)
+          resetGame()
+        }, 1000)
       } else {
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X'
       }
