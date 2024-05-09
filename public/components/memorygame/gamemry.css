@@ -45,12 +45,15 @@
   top: 25%;
   left: 30%;
 }
-@media (max-width: 659px) {
+@media (max-width: 984px) {
   .score {
-    top: 30%;
+    top: 40%;
+  }
+  .memory-grid {
+    top: 50%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 599px) {
   .score {
     top: 49%;
   }
