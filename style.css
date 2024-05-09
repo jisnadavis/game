@@ -11,6 +11,7 @@ body {
   font-weight: bolder;
   font-size: 30px;
   top: 300px;
+  left: 30%;
   animation-name: playbutton;
   animation-duration: 2s;
   animation-timing-function: ease-in;
@@ -19,20 +20,18 @@ body {
   animation-direction: alternate;
   animation-fill-mode: forwards;
 }
-@keyframes playbutton {
-  0% {
-    left: 0px;
+@media (max-width: 817px) {
+  .play {
+    left: 10%;
   }
-  25% {
-    left: 100px;
+}
+@media (max-width: 510px) {
+  .play {
+    left: 0%;
   }
-  50% {
-    left: 300px;
-  }
-  75% {
-    left: 400px;
-  }
-  100% {
-    left: 600px;
+}
+@media (max-width: 410px) {
+  .play {
+    width: 200px;
   }
 }
